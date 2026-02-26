@@ -37,3 +37,25 @@ int main(){
        }
        return 0;
  }
+
+//OUTPUT FOR THE LEAKY_BUCKET
+/*enter bucket capacity: 10
+enter outgoing rate: 4
+enter no of iterations: 3
+
+ Iteration 1
+Enter number of incoming packets: 6 
+Packets sent:4
+Packets remaining in bucket:2
+
+ Iteration 2
+Enter number of incoming packets: 9
+Packets dropped:1
+Packets sent:4
+Packets remaining in bucket:6
+
+ Iteration 3
+Enter number of incoming packets: 2
+Packets sent:4
+Packets remaining in bucket:4
+*/
