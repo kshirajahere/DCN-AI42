@@ -37,7 +37,8 @@ int main()
 {
     printf("\n Enter data : ");
     scanf("%s", t);
-
+    
+    printf("generating polynomial:%s",g);
     a = strlen(t);
 
     for(e=a; e<a+N-1; e++)
@@ -90,3 +91,31 @@ int main()
 
     return 0;
 }
+
+/*
+OUTPUT
+Enter data : 101
+generating polynomial:10001000000100001
+ Modified data is : 1010000000000000000
+ CRC checksum is : 0101000010100101
+ Final codeword transmitted is : 1010101000010100101
+ Test error detection 0(yes) 1(no)?: 0
+
+ Enter the position where error is to be inserted: 3
+
+ Erroneous data : 1000101000010100101 
+
+ CRC checksum is : 0001000000100001
+ Error detected
+
+Enter data : 101
+generating polynomial:10001000000100001
+ Modified data is : 1010000000000000000
+ CRC checksum is : 0101000010100101
+ Final codeword transmitted is : 1010101000010100101
+ Test error detection 0(yes) 1(no)?: 1
+
+ CRC checksum is : 0000000000000000
+ No error detected 
+*/
+
